@@ -4,6 +4,8 @@ import { CartContext } from "../context/CartContext.jsx";
 function Cart() {
   const { cart, removeFromCart } = useContext(CartContext);
 
+  const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+
   const handleBuy = () => {
     if (cart.length === 0) {
       alert("Your cart is empty!");
@@ -39,7 +41,13 @@ function Cart() {
         </div>
       ))}
 
-     
+      {cart.length > 0 && (
+        <div className="total-price">
+          <h3>Total Price: ₹{totalPrice}</h3>
+        </div>
+      )}
+
+
       {cart.length > 0 && (
         <button className="buy-btn" onClick={handleBuy}>
           Buy Now
@@ -51,4 +59,3 @@ function Cart() {
 }
 
 export default Cart;
-
