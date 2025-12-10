@@ -8,6 +8,7 @@
   background-color: lightyellow;
   text-align: center;
   color: black;
+  display: flex;
 
    font-synthesis: none;
    text-rendering: optimizeLegibility; 
@@ -16,6 +17,7 @@
 }
 
 body {
+  display: flex;
   margin:100px;
   padding: 10px;
 }
