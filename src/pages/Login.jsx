@@ -18,7 +18,7 @@ function Login({ setIsLoggedIn }) {
   };
 
   return (
-    <div className="login-container">
+    <div className="login-container d-flex">
       <div className="login-box">
 
         <h2>Login</h2>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="home-container">
+    <div className="home-container d-flex">
       <div className="home-content text-center">
         <h1 className="home-title">Welcome to Shopping</h1>
         <p className="home-subtitle">

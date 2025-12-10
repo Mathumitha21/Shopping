@@ -13,7 +13,7 @@ function Cart() {
   };
 
   return (
-    <div className="cart-container">
+    <div className="cart-container d-flex">
 
       <h2 className="cart-title">Your Cart</h2>
 

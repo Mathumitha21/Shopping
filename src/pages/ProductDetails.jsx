@@ -40,7 +40,7 @@ function ProductDetails() {
 
   const { addToCart } = useContext(CartContext);
 return (
-  <div className="details">
+  <div className="details d-flex">
 
     <img className="details-img" src={product.image} alt="" />
 

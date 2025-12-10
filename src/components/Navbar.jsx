@@ -6,7 +6,7 @@ function Navbar() {
   const { cart } = useContext(CartContext);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar d-flex">
       <h2 className="logo">Flipkart Lite</h2>
       <div className="nav-links">
         <Link to="/">Home</Link>

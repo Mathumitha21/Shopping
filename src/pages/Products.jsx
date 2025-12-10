@@ -107,7 +107,7 @@ function Products() {
   ];
 
   return (
-    <div className="products-grid">
+    <div className="products-grid d-flex">
       {products.map((p) => (
         <ProductCard key={p.id} product={p} />
       ))}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ProductCard({ product }) {
   return (
-    <div className="product-card">
+    <div className="product-card d-flex">
       
       <img className="product-img" src={product.image} alt={product.title} />
 
