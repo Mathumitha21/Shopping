@@ -9,6 +9,7 @@ import Cart from "./pages/Cart.jsx";
 import Login from "./pages/Login.jsx";
 
 import { CartProvider } from "./context/CartContext.jsx";
+import Explore from "./pages/Explore.jsx";
 
 function App() {
   
@@ -48,6 +49,12 @@ function App() {
             path="/cart"
             element={isLoggedIn ? <Cart /> : <Navigate to="/login" />}
           />
+
+          <Route
+            path="/explore"
+            element={isLoggedIn ? <Explore /> : <Navigate to="/login" />}
+          />
+
 
         </Routes>
 
